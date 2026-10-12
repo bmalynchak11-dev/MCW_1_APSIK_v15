@@ -1,5 +1,8 @@
 [Unit]
-# TODO: реалізуйте розділ Unit
+Description=Daily report generator service
+After=network.target
 
 [Service]
-# TODO: реалізуйте розділ Service
+Type=oneshot
+User=reporter
+ExecStart=/opt/automation/task.sh /srv/reports

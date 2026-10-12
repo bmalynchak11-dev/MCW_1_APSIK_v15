@@ -1,8 +1,9 @@
 [Unit]
-Description=Щоденний звіт
+Description=Run daily report generator at 06:45
 
 [Timer]
-# TODO: реалізуйте розділ Timer
+OnCalendar=*-*-* 06:45:00
+Persistent=true
 
 [Install]
-# TODO: реалізуйте розділ Install
+WantedBy=timers.target
